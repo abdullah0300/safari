@@ -480,15 +480,7 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
-    section div {
-      padding-left: 0 !important;
-    }
-    section {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
+
 
 
   /* General Footer Styling */
