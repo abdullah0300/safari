@@ -270,7 +270,7 @@ nav {
 
 .popular-destinations {
     padding: 4rem 2rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -294,6 +294,7 @@ nav {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    /* width: 17   rem; */
 }
 
 .destination-card:hover {
@@ -307,7 +308,7 @@ nav {
 }
 
 .destination-info {
-    padding: 1.5rem;
+    padding: 0.5rem 1rem 1rem;
 }
 
 .destination-title {
@@ -358,7 +359,10 @@ nav {
 @media (max-width: 768px) {
     .popular-destinations {
         padding: 2rem 1rem;
+        max-width: 1200px;
+
     }
+    
 
     .section-title {
         font-size: 1.5rem;
@@ -367,5 +371,13 @@ nav {
 
     .destinations-grid {
         gap: 1rem;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .destination-card {
+       
+        width: 17rem;
     }
 }
