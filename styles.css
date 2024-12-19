@@ -304,13 +304,10 @@ nav {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .destination-info {
-/* margin-top: 8px; */
-padding: 1.5rem;
-/* font-weight: lighter; */
+    padding: 1.5rem;
 }
 
 .destination-title {
@@ -339,7 +336,7 @@ padding: 1.5rem;
 .price {
     font-size: 1.5rem;
     color: #AB7E4C;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 .book-now {
