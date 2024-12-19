@@ -231,6 +231,7 @@ nav {
 
     .booking-form {
         padding: 1.5rem;
+        margin-top: 12rem;
     }
 
     .booking-form p {
@@ -274,6 +275,12 @@ nav {
     margin: 0 auto;
 }
 
+.popular-destinations2 {
+    
+    padding: 0rem 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
 .section-title {
     font-size: 2rem;
     color: #333;
@@ -358,11 +365,16 @@ nav {
 
 @media (max-width: 768px) {
     .popular-destinations {
+        margin-top: 13rem;
         padding: 2rem 1rem;
         max-width: 1200px;
 
     }
-    
+    .popular-destinations2 {
+        padding: 2rem 1rem;
+        max-width: 1200px;
+
+    }
 
     .section-title {
         font-size: 1.5rem;
