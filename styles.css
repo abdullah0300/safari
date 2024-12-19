@@ -393,3 +393,89 @@ nav {
         width: 17rem;
     }
 }
+
+.banner-section {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://ik.imagekit.io/mctozv7td/Safari/45269de98a2d4ad38605e3a66d2ec21f.jpg?updatedAt=1734600209104');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.7);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background: white;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-section {
+        height: 250px;
+        margin: 3rem 0;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-section {
+        height: 200px;
+        margin: 2rem 0;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .explore-btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
