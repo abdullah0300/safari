@@ -336,7 +336,7 @@ nav {
 .price {
     font-size: 1.5rem;
     color: #AB7E4C;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .book-now {
