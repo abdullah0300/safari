@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: #C4A484;
+    background-color: #ffefde;
     padding: 1rem;
     width: 100%;
     position: fixed;
@@ -37,6 +37,49 @@ nav {
     letter-spacing: 1px;
     line-height: 1.2;
 }
+/* Announcement Bar Styling */
+.announcement-bar {
+    background-color: #ffffff; /* Dark brown color */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .announcement-bar p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .announcement-link {
+    margin-left: 10px;
+    color: #FFD700; /* Gold color for the link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .announcement-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .announcement-bar {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .announcement-link {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
 
 .nav-links {
     display: flex;
@@ -45,7 +88,7 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: opacity 0.3s;
 }
@@ -55,8 +98,8 @@ nav {
 }
 
 .book-nownav {
-    background-color: white;
-    color: #C4A484;
+    background-color: #F89201;
+    color: #ffffff;
     padding: 0.3rem 1.5rem;
     border-radius: 25px;
     border: none;
@@ -72,7 +115,7 @@ nav {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
