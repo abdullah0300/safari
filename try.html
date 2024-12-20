@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="popup-overlay" id="welcomePopup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-header">
+                <h2>🌍 Welcome to Tanzania Adventures</h2>
+                <p>Discover the beauty and adventure of Tanzania with our expertly guided safaris and tours. Experience the thrill of the wild, the serenity of nature, and the rich culture of Tanzania.</p>
+            </div>
+            <div class="highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-compass highlight-icon"></i>
+                    <div class="highlight-text">
+                        <h3>Tailored Safari Packages</h3>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-users highlight-icon"></i>
+                    <div class="highlight-text">
+                        <h3>Experienced Guides</h3>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-star highlight-icon"></i>
+                    <div class="highlight-text">
+                        <h3>Luxury and Budget Options</h3>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-headset highlight-icon"></i>
+                    <div class="highlight-text">
+                        <h3>24/7 Customer Support</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('welcomePopup').classList.add('active');
+            }, 1000);
+        };
+
+        function closePopup() {
+            document.getElementById('welcomePopup').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
