@@ -17,9 +17,11 @@ nav {
     padding: 1rem;
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 40px;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease; /* Smoothly adjust position */
 }
 
 .nav-container {
@@ -37,49 +39,6 @@ nav {
     letter-spacing: 1px;
     line-height: 1.2;
 }
-/* Announcement Bar Styling */
-.announcement-bar {
-    background-color: #ffffff; /* Dark brown color */
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  
-  .announcement-bar p {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  .announcement-link {
-    margin-left: 10px;
-    color: #FFD700; /* Gold color for the link */
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .announcement-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .announcement-bar {
-      flex-direction: column;
-      padding: 15px;
-    }
-  
-    .announcement-link {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  }
-  
 
 .nav-links {
     display: flex;
@@ -157,6 +116,49 @@ nav {
         font-size: 1.2rem;
     }
 }
+
+
+/* Announcement Bar Styling */
+/* Announcement Bar Styling */
+.announcement-bar {
+    background-color: #8A5A2E; /* Dark brown color */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed; /* Make it fixed */
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hide/show animation */
+  }
+  
+  .announcement-bar.hidden {
+    transform: translateY(-100%); /* Move out of view */
+  }
+  
+  .announcement-bar p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .announcement-link {
+    margin-left: 10px;
+    color: #FFD700; /* Gold color for the link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .announcement-link:hover {
+    text-decoration: underline;
+  }
+  
 
 .hero {
     position: relative;
