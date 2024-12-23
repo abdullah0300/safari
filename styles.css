@@ -782,3 +782,309 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* about page  */
+
+
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://ik.imagekit.io/mctozv7td/Safari/WhatsApp%20Image%202024-12-19%20at%2018.04.27_166227de.jpg?updatedAt=1734897849710') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.about-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-left: 4px solid #e6b800;
+    background: rgba(230, 184, 0, 0.05);
+}
+
+.about-heading {
+    color: #b38600;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.about-paragraph {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.about-accent-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: url('/api/placeholder/400/800') center/cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.about-highlight {
+    color: #b38600;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 40vh;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+        margin-top: -50px;
+    }
+
+    .about-section {
+        padding: 1rem;
+    }
+}
+
+
+/* tanzania */
+
+.discover-hero {
+    margin-top: 10vh;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('https://ik.imagekit.io/mctozv7td/Safari/51c42f446573452a945f06bc5d1b4ea8.jpg?updatedAt=1734600206848') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.discover-hero-content {
+    margin-top: 50px;
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    margin: 0 15px;
+}
+
+.discover-hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.discover-section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.discover-section:nth-child(even) {
+    background: #fff;
+}
+
+.discover-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.discover-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.discover-image {
+    flex: 1;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.discover-highlight {
+    color: #e6b800;
+    font-weight: bold;
+}
+
+.discover-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c1810;
+}
+
+.discover-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.discover-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.discover-feature {
+    background: rgba(230, 184, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #e6b800;
+}
+
+.discover-floating-text {
+    position: absolute;
+    font-size: 12rem;
+    opacity: 0.03;
+    white-space: nowrap;
+    transform: rotate(-45deg);
+    pointer-events: none;
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .discover-container {
+        flex-direction: column;
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+
+    .discover-image {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .discover-features {
+        grid-template-columns: 1fr;
+    }
+
+    .discover-hero h1 {
+        font-size: 3rem;
+    }
+
+    .discover-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    .discover-hero {
+        margin-top: 5vh;
+        height: 70vh;
+        background-attachment: scroll;
+    }
+
+    .discover-hero-content {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+
+    .discover-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .discover-section {
+        padding: 3rem 0;
+    }
+
+    .discover-container {
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .discover-image {
+        height: 300px;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .discover-heading {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .discover-paragraph {
+        font-size: 1.1rem;
+    }
+
+    .discover-feature {
+        padding: 1.5rem;
+    }
+
+    .discover-floating-text {
+        font-size: 6rem;
+    }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+    .discover-hero {
+        height: 60vh;
+    }
+
+    .discover-hero h1 {
+        font-size: 2rem;
+    }
+
+    .discover-image {
+        height: 250px;
+    }
+
+    .discover-heading {
+        font-size: 1.5rem;
+    }
+
+    .discover-paragraph {
+        font-size: 1rem;
+    }
+
+    .discover-feature {
+        padding: 1rem;
+    }
+}
