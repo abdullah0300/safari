@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 
-    // Handle mobile dropdown toggles
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
+//     // Handle mobile dropdown toggles
+//     dropdowns.forEach(dropdown => {
+//         dropdown.addEventListener('click', function(e) {
+//             if (window.innerWidth <= 768) {
+//                 e.preventDefault();
+//                 this.parentElement.classList.toggle('active');
+//             }
+//         });
+//     });
+// });
