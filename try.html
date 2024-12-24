@@ -1,60 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
     <style>
-        
+        /* Style for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown button (main link) */
+        .dropdown .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Add arrow to the dropdown button */
+        .dropbtn::after {
+            content: " ▼"; /* Downward arrow */
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change link color on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change button background on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
     </style>
 </head>
 <body>
-    <div class="popup-overlay" id="welcomePopup">
-        <div class="popup-content">
-            <button class="close-btn" onclick="closePopup()">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="popup-header">
-                <h2>🌍 Welcome to Tanzania Adventures</h2>
-                <p>Discover the beauty and adventure of Tanzania with our expertly guided safaris and tours. Experience the thrill of the wild, the serenity of nature, and the rich culture of Tanzania.</p>
-            </div>
-            <div class="highlights">
-                <div class="highlight-item">
-                    <i class="fas fa-compass highlight-icon"></i>
-                    <div class="highlight-text">
-                        <h3>Tailored Safari Packages</h3>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <i class="fas fa-users highlight-icon"></i>
-                    <div class="highlight-text">
-                        <h3>Experienced Guides</h3>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <i class="fas fa-star highlight-icon"></i>
-                    <div class="highlight-text">
-                        <h3>Luxury and Budget Options</h3>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <i class="fas fa-headset highlight-icon"></i>
-                    <div class="highlight-text">
-                        <h3>24/7 Customer Support</h3>
-                    </div>
-                </div>
-            </div>
+    <div class="dropdown">
+        <a href="tanzania.html" class="dropbtn">Discover Tanzania</a>
+        <div class="dropdown-content">
+            <a href="safari.html">Safari Tours</a>
+            <a href="zanzibar.html">Zanzibar Beaches</a>
+            <a href="kilimanjaro.html">Mount Kilimanjaro</a>
         </div>
     </div>
-
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('welcomePopup').classList.add('active');
-            }, 1000);
-        };
-
-        function closePopup() {
-            document.getElementById('welcomePopup').classList.remove('active');
-        }
-    </script>
 </body>
 </html>
