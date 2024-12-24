@@ -40,6 +40,9 @@ nav {
     line-height: 1.2;
 }
 
+.logo img{
+    height: 80px;
+}
 .nav-links {
     display: flex;
     gap: 2rem;
