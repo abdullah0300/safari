@@ -53,15 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('welcomePopup').classList.add('active');
-    }, 1000);
-};
+// window.onload = function() {
+//     setTimeout(function() {
+//         document.getElementById('welcomePopup').classList.add('active');
+//     }, 1000);
+// };
 
-function closePopup() {
-    document.getElementById('welcomePopup').classList.remove('active');
-}
+// function closePopup() {
+//     document.getElementById('welcomePopup').classList.remove('active');
+// }
 
 // Add this JavaScript for mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 
-//     // Handle mobile dropdown toggles
-//     dropdowns.forEach(dropdown => {
-//         dropdown.addEventListener('click', function(e) {
-//             if (window.innerWidth <= 768) {
-//                 e.preventDefault();
-//                 this.parentElement.classList.toggle('active');
-//             }
-//         });
-//     });
-// });
+    // Handle mobile dropdown toggles
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            }
+        });
+    });
+});

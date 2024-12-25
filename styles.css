@@ -1306,6 +1306,7 @@ nav {
         }
 
         .serengeti-hero {
+            margin-top: 20vh;
             height: 60vh;
             background: 
                         url('https://ik.imagekit.io/mctozv7td/Safari/magdalena-kula-manchee-EgbLppsj3L4-unsplash%20(1).jpg?updatedAt=1734953743187') center/cover;
@@ -1321,9 +1322,9 @@ nav {
         .hero-content {
             max-width: 800px;
             padding: 2rem;
-            background: rgba(0, 0, 0, 0.4);
+            /* background: rgba(0, 0, 0, 0.4); */
             border-radius: 10px;
-            backdrop-filter: blur(5px);
+            /* backdrop-filter: blur(5px); */
             animation: fadeIn 1s ease-out;
         }
 
@@ -1565,5 +1566,725 @@ nav {
 
     .hamburger {
         display: block;
+    }
+}
+
+
+
+/* ngorongoro */
+
+
+.crater-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f1ea;
+    overflow-x: hidden;
+}
+
+.crater-circle-decoration {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23a0522d30'%3E%3Ccircle cx='50' cy='50' r='45'/%3E%3C/svg%3E");
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.crater-hero-section {
+    height: 60vh;
+    background: 
+                url('https://ik.imagekit.io/mctozv7td/Safari/Ngorongoro%20Crater.jpg?updatedAt=1735117772534') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20vh;
+}
+
+.crater-hero-content {
+    max-width: 900px;
+    padding: 3rem;
+    /* background: rgba(0, 0, 0, 0.5); */
+    border-radius: 15px;
+    /* backdrop-filter: blur(8px); */
+    animation: crater-fade-in 1.2s ease-out;
+}
+
+.crater-hero-heading {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.crater-hero-subtitle {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.crater-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.crater-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+.crater-info-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.crater-info-box:hover {
+    transform: translateY(-10px);
+}
+
+.crater-info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #e28f41;
+}
+
+.crater-highlight-section {
+    position: relative;
+    padding: 6rem 0;
+    background: #2a1810;
+    color: white;
+    margin: 4rem 0;
+}
+
+.crater-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 1.5rem;
+    margin: 4rem 0;
+}
+
+.crater-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.crater-gallery-item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.crater-gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.crater-gallery-image:hover {
+    transform: scale(1.1);
+}
+
+.crater-stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.crater-stat-box {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: 15px;
+    border-bottom: 4px solid #e28f41;
+}
+
+.crater-stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e28f41;
+    margin-bottom: 1rem;
+}
+
+.crater-map-container {
+    position: relative;
+    height: 500px;
+    margin: 4rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes crater-fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+    .crater-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .crater-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .crater-stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .crater-hero-heading {
+        font-size: 3rem;
+    }
+
+    .crater-info-grid, 
+    .crater-stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .crater-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+    }
+
+    .crater-container {
+        padding: 2rem 1rem;
+    }
+}
+
+
+.crater-split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 4rem 0;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.crater-split-image {
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+.crater-split-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.crater-split-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crater-split-title {
+    font-size: 2.5rem;
+    color: #8b4513;
+    margin-bottom: 1.5rem;
+}
+
+.crater-split-text {
+    color: #333;
+}
+
+.crater-split-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.crater-info-subtitle {
+    color: #8b4513;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.crater-quick-facts {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(139, 69, 19, 0.1);
+}
+
+.crater-fact {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.crater-fact span {
+    font-weight: bold;
+    color: #8b4513;
+}
+
+@media (max-width: 1024px) {
+    .crater-split-section {
+        grid-template-columns: 1fr;
+    }
+
+    .crater-split-image {
+        min-height: 400px;
+    }
+
+    .crater-split-content {
+        padding: 2rem;
+    }
+}
+
+
+/* kilimanjaro */
+
+
+.kili-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.kili-mountain-decoration {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23e0e0e030'%3E%3Cpath d='M50 10L90 90H10L50 10z'/%3E%3C/svg%3E");
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.kili-hero {
+    margin-top: 22vh;
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('https://ik.imagekit.io/mctozv7td/Safari/mount-kilimanjaro-7312237_1920.jpg?updatedAt=1735120648707') center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.kili-hero-content {
+    max-width: 900px;
+    padding: 3rem;
+    /* background: rgba(0, 0, 0, 0.4); */
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    animation: kili-fade-up 1.2s ease-out;
+}
+
+.kili-hero-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.kili-hero-subtitle {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.kili-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.kili-routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.kili-route-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.kili-route-card:hover {
+    transform: translateY(-10px);
+}
+
+.kili-route-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.kili-route-content {
+    padding: 2rem;
+}
+
+.kili-route-title {
+    font-size: 1.8rem;
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.kili-route-info {
+    color: #636e72;
+}
+
+.kili-video-section {
+    position: relative;
+    height: 80vh;
+    margin: 6rem 0;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.kili-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.kili-stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.kili-stat-box {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid #2d3436;
+}
+
+.kili-stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.kili-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 1.5rem;
+    margin: 4rem 0;
+}
+
+.kili-gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kili-gallery-item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.kili-gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.kili-gallery-item:hover .kili-gallery-image {
+    transform: scale(1.1);
+}
+
+.kili-info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 6rem 0;
+    align-items: center;
+}
+.kili-info-section img {
+    height: 30rem;
+    border-radius: 20px;
+}
+
+.kili-info-content {
+    padding: 2rem;
+}
+
+.kili-info-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2d3436;
+}
+
+.kili-info-text {
+    font-size: 1.1rem;
+    color: #636e72;
+    margin-bottom: 1.5rem;
+}
+
+
+@keyframes kili-fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+    .kili-routes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kili-stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kili-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kili-info-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kili-hero-heading {
+        font-size: 3.5rem;
+    }
+
+    .kili-routes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kili-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 300px);
+    }
+}
+
+
+/* zanziber
+ */
+
+ 
+ .zanzibar-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #3d649e;
+    background: #f4f1ea;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.zanzibar-palm-decoration {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%2345818e30'%3E%3Cpath d='M50,10 C50,50 20,60 10,90 M50,10 C50,50 80,60 90,90'/%3E%3C/svg%3E");
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.zanzibar-hero-section {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://ik.imagekit.io/mctozv7td/Safari/africa-5135407_1920.jpg?updatedAt=1735127480374') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20vh;
+}
+
+.zanzibar-hero-content {
+    max-width: 900px;
+    padding: 3rem;
+    border-radius: 15px;
+    /* backdrop-filter: blur(8px); */
+    animation: zanzibar-fade-in 1.2s ease-out;
+}
+
+.zanzibar-hero-heading {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.zanzibar-hero-subtitle {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.zanzibar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.zanzibar-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+.zanzibar-info-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.zanzibar-info-box:hover {
+    transform: translateY(-10px);
+}
+
+.zanzibar-info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #45818e;
+}
+
+.zanzibar-split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 4rem 0;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.zanzibar-split-image {
+    height: 100%;
+    min-height: 600px;
+}
+
+.zanzibar-split-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zanzibar-split-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.zanzibar-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 1.5rem;
+    margin: 4rem 0;
+}
+
+.zanzibar-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.zanzibar-gallery-item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.zanzibar-gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.zanzibar-gallery-image:hover {
+    transform: scale(1.1);
+}
+
+@keyframes zanzibar-fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+    .zanzibar-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .zanzibar-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .zanzibar-split-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .zanzibar-hero-heading {
+        font-size: 3rem;
+    }
+
+    .zanzibar-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .zanzibar-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+    }
+
+    .zanzibar-container {
+        padding: 2rem 1rem;
+    }
+
+    .zanzibar-split-image {
+        min-height: 400px;
     }
 }
