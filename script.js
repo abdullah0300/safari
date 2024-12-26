@@ -83,3 +83,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// highlights
+if (window.innerWidth <= 768) {
+    const container = document.querySelector('.highlights-container');
+    const dots = document.querySelectorAll('.dot');
+    
+    container.addEventListener('scroll', () => {
+        const scrollPosition = container.scrollLeft;
+        const itemWidth = container.querySelector('.highlight-item').offsetWidth;
+        const activeIndex = Math.round(scrollPosition / itemWidth);
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === activeIndex);
+        });
+    });
+}
