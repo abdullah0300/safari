@@ -3425,6 +3425,7 @@ nav {
     .dream-hero-image {
         min-height: 400px;
         clip-path: none;
+        display: none;
     }
 
     .dream-hero-title {
