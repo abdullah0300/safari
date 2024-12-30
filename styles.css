@@ -1958,7 +1958,7 @@ nav {
     padding: 3rem;
     /* background: rgba(0, 0, 0, 0.4); */
     border-radius: 15px;
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     animation: kili-fade-up 1.2s ease-out;
 }
 
