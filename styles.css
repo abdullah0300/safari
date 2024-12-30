@@ -1058,7 +1058,7 @@ nav {
 @media (max-width: 768px) {
     
     .discover-hero {
-        margin-top: 5vh;
+        margin-top: 15vh;
         height: 70vh;
         background-attachment: scroll;
     }
