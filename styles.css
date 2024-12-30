@@ -1122,7 +1122,6 @@ nav {
 
 /* contactus
  */
-
  .contact-hero {
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -1310,15 +1309,37 @@ nav {
         padding: 2rem;
     }
 
+    .contact-heading {
+        font-size: 2rem;
+    }
+
     .social-grid {
         grid-template-columns: 1fr;
     }
 
-    .contact-heading {
-        font-size: 2rem;
+    .contact-method {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contact-details {
+        text-align: left;
+    }
+
+    .form-input {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
-
 
 /* saengeti */
        
