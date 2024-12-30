@@ -671,9 +671,12 @@ nav {
         padding: 10px;
         border: none;
         border-radius: 8px 0px 0px 8px;
-        max-width: 14rem;
+        max-width: 10rem;
         margin-left: 40vh;
 
+    }
+    .subscribe-form button{
+        width: 20vh;
     }
 }
 
@@ -681,6 +684,15 @@ nav {
     
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .subscribe-form button{
+        width: 15vh;
+    }
+    .subscribe-form input {
+        flex: 1;
+
+        max-width: 10rem;
+
     }
 }
 
