@@ -2079,7 +2079,7 @@ nav {
 }
 
 .kili-gallery-image {
-    width: 100%;
+    width: auto;
     height:40vh;
     object-fit: cover;
     transition: transform 0.3s ease;
