@@ -3856,6 +3856,7 @@ h3 {
 
 /* Whatsapp  */
 
+
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -3883,4 +3884,28 @@ h3 {
 .whatsapp-icon {
     width: 24px;
     height: 24px;
+}
+
+.whatsapp-text {
+    display: inline;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .whatsapp-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .whatsapp-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .whatsapp-text {
+        display: none;
+    }
 }
