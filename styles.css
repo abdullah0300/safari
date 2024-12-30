@@ -940,9 +940,9 @@ nav {
     margin-top: 50px;
     max-width: 800px;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     border-radius: 10px;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     margin: 0 15px;
 }
 
