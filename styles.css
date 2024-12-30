@@ -2075,8 +2075,8 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    flex: 0 0 80%; /* Each image takes 80% of the viewport width */
-    max-width: 80%; /* Prevent stretching */
+    flex: 0 0 90%; /* Each image takes 80% of the viewport width */
+    max-width: 90%; /* Prevent stretching */
     height: 300px; /* Maintain consistent height */
 }
 
