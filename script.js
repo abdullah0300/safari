@@ -1,19 +1,19 @@
-let lastScrollY = window.scrollY;
-const announcementBar = document.querySelector('.announcement-bar');
-const nav = document.querySelector('nav');
+// let lastScrollY = window.scrollY;
+// const announcementBar = document.querySelector('.announcement-bar');
+// const nav = document.querySelector('nav');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScrollY) {
-        // User is scrolling down
-        announcementBar.classList.add('hidden');
-        nav.style.top = '0'; // Move navbar to the top
-    } else {
-        // User is scrolling up
-        announcementBar.classList.remove('hidden');
-        nav.style.top = '40px'; // Move navbar below the announcement bar
-    }
-    lastScrollY = window.scrollY;
-});
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > lastScrollY) {
+//         // User is scrolling down
+//         announcementBar.classList.add('hidden');
+//         nav.style.top = '0'; // Move navbar to the top
+//     } else {
+//         // User is scrolling up
+//         announcementBar.classList.remove('hidden');
+//         nav.style.top = '40px'; // Move navbar below the announcement bar
+//     }
+//     lastScrollY = window.scrollY;
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
