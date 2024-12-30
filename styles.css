@@ -2097,13 +2097,15 @@ nav {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 300px);
-        gap: 1.5rem; /* Restore larger gap for desktop */
     }
 
     .kili-gallery-item {
         flex: none;
         height: auto; /* Allow grid to control height */
+        flex: 0 0 100%; /* Each image takes 80% of the viewport width */
+    max-width: 100%
     }
+    
 
     .kili-gallery-item:nth-child(1) {
         grid-column: span 2;
