@@ -2153,8 +2153,8 @@ nav {
     }
 
     .kili-info-section img {
-        height: auto; /* Allow image height to adjust naturally */
-        width: 60vh; /* Ensure image takes full width */
+        height: 50vh; /* Allow image height to adjust naturally */
+        width: 100%; /* Ensure image takes full width */
     }
 
     .kili-info-content {
