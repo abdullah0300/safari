@@ -1799,15 +1799,15 @@ nav {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 @media (max-width: 1024px) {
     .crater-info-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .crater-gallery {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 200px);
+        grid-template-columns: 1fr; /* Set to 1 column */
+        grid-template-rows: auto; /* Allow rows to adjust automatically */
+        gap: 1rem; /* Optional: Add spacing between rows */
     }
 
     .crater-stats-container {
@@ -1826,14 +1826,16 @@ nav {
     }
 
     .crater-gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 200px);
+        grid-template-columns: 1fr; /* Ensure one column layout */
+        grid-template-rows: auto; /* Adjust rows automatically */
+        gap: 1rem; /* Optional: Add spacing between rows */
     }
 
     .crater-container {
         padding: 2rem 1rem;
     }
 }
+
 
 
 .crater-split-section {
