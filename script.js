@@ -15,38 +15,20 @@ window.addEventListener('scroll', () => {
     lastScrollY = window.scrollY;
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const nav = document.querySelector('nav');
 
-    function toggleMenu() {
-        navLinks.classList.toggle('active');
-        hamburger.innerHTML = navLinks.classList.contains('active') ? '&#10005;' : '&#9776;';
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    }
 
-    hamburger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleMenu();
-    });
+//     document.addEventListener('click', function (e) {
+//         if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
+//             toggleMenu();
+//         }
+//     });
 
-    navLinks.querySelectorAll('a, button').forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
-
-    document.addEventListener('click', function (e) {
-        if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
-
-    window.addEventListener('resize', function () {
-        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
-});
+//     window.addEventListener('resize', function () {
+//         if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+//             toggleMenu();
+//         }
+//     });
+// });
 
 // window.onload = function() {
 //     setTimeout(function() {
@@ -60,25 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Add this JavaScript for mobile menu functionality
 
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const dropdowns = document.querySelectorAll('.dropdown-trigger');
-
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-
-    // Handle mobile dropdown toggles
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
 
 // highlights
 if (window.innerWidth <= 768) {

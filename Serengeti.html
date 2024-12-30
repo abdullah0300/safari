@@ -26,36 +26,33 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <a href="/"><img src="logo.png" alt=""></a>
+                <a href="/"><img src="logo.png" alt="Logo"></a>
             </div>
             <button class="hamburger">&#9776;</button>
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="aboutus.html">About Us</a>
-                <a href="safari.html">Safaris </a>
-                <a href="accomodation.html">Accomodation</a>
-                <a href="activities.html">Activities </a>
+                <a href="safari.html">Safaris</a>
+                <a href="accomodation.html">Accommodation</a>
+                <a href="activities.html">Activities</a>
                 <div class="dropdown">
-                    <a href="tanzania.html" class="dropdown-trigger">Discover Tanzania<span class="arrow"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <a href="tanzania.html" class="dropdown-trigger">Discover Tanzania<span class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down" viewBox="0 0 16 16">
                                 <path
                                     d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
-                            </svg></span></a>
+                            </svg>
+                        </span></a>
                     <div class="dropdown-content">
                         <a href="Serengeti.html">Serengeti</a>
                         <a href="Ngorongoro.html">Ngorongoro</a>
-                        <a href="Kilimanjaro.html">Mount Kilimanjaro </a>
+                        <a href="Kilimanjaro.html">Mount Kilimanjaro</a>
                         <a href="zanzibar.html">Zanzibar</a>
                     </div>
                 </div>
                 <a href="contact.html">Contact Us</a>
-                <button data-fillout-inherit-parameters data-fillout-popup-size="medium" data-fillout-id="dNN38Gt3k3us"
-                    data-fillout-embed-type="popup" data-fillout-dynamic-resize class="book-nownav">
-                    Book Now
-                </button>
+                <button class="book-nownav">Book Now</button>
             </div>
-            <script src="https://server.fillout.com/embed/v1/"></script>
         </div>
     </nav>
     <!-- Lion paw prints decoration -->
@@ -207,7 +204,36 @@
             </div>
         </div>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navLinksItems = document.querySelectorAll('.nav-links li');
+
+        hamburger.addEventListener('click', () => {
+            // Toggle navigation
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+
+            // Animate links
+            navLinksItems.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });</script>
 
     <body>
+
+        <script src="script.js"></script>
 
 </html>
