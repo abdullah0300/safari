@@ -2146,6 +2146,28 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .kili-info-section {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 2rem; /* Reduce gap for smaller screens */
+        margin: 4rem 1rem; /* Adjust margins for better spacing */
+    }
+
+    .kili-info-section img {
+        height: auto; /* Allow image height to adjust naturally */
+        width: 100%; /* Ensure image takes full width */
+    }
+
+    .kili-info-content {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+
+    .kili-info-title {
+        font-size: 2rem; /* Adjust font size for titles */
+    }
+
+    .kili-info-text {
+        font-size: 1rem; /* Adjust font size for text */
+    }
     .kili-hero-heading {
         font-size: 3.5rem;
     }
