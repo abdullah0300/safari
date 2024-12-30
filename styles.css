@@ -2067,7 +2067,7 @@ nav {
 
 .kili-gallery-wrapper {
     display: inline-flex;
-    gap: 1.5rem;
+    gap: 1rem; /* Adjust gap for spacing */
 }
 
 .kili-gallery-item {
@@ -2075,13 +2075,15 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    flex: 0 0 calc(100% / 2); /* Show 2 items at a time on mobile */
+    flex: 0 0 80%; /* Each image takes 80% of the viewport width */
+    max-width: 80%; /* Prevent stretching */
+    height: 300px; /* Maintain consistent height */
 }
 
 .kili-gallery-image {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -2095,10 +2097,12 @@ nav {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 300px);
+        gap: 1.5rem; /* Restore larger gap for desktop */
     }
 
     .kili-gallery-item {
         flex: none;
+        height: auto; /* Allow grid to control height */
     }
 
     .kili-gallery-item:nth-child(1) {
@@ -2151,10 +2155,7 @@ nav {
         grid-template-rows: auto;
     }
 
-    /* .kili-gallery {
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto;    
-    } */
+    
 
     .kili-info-section {
         grid-template-columns: 1fr;
@@ -2193,9 +2194,7 @@ nav {
         grid-template-columns: 1fr;
     }
 
-    /* .kili-gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;    } */
+    
 }
 
 
