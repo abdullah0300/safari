@@ -2067,7 +2067,7 @@ nav {
 
 .kili-gallery-wrapper {
     display: inline-flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
 .kili-gallery-item {
@@ -2079,9 +2079,9 @@ nav {
 }
 
 .kili-gallery-image {
-    width: auto;
-    height:40vh;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
     transition: transform 0.3s ease;
 }
 
