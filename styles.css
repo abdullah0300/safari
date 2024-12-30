@@ -2130,11 +2130,13 @@ nav {
     }
 
     .kili-stats-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Ensure one column layout */
+        grid-template-rows: auto;
     }
 
     .kili-gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Ensure one column layout */
+        grid-template-rows: auto;    
     }
 
     .kili-info-section {
@@ -2154,8 +2156,7 @@ nav {
 
     .kili-gallery {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 300px);
-    }
+        grid-template-rows: auto;    }
 }
 
 
