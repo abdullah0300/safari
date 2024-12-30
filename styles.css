@@ -1320,7 +1320,7 @@ nav {
     .contact-method {
         flex-direction: column;
         align-items: flex-start;
-        max-width: 80vh;
+        max-width: 30vh;
         font-size: 0.9rem;
     }
 
@@ -1340,7 +1340,7 @@ nav {
 
     .form-input {
         font-size: 0.9rem;
-        max-width: 80vh;
+        max-width: 20vh;
     }
 
     .submit-btn {
@@ -1348,7 +1348,7 @@ nav {
         font-size: 1rem;
     }
     .contact-form{
-        max-width: 80vh;
+        max-width: 30vh;
     }
 }
 
