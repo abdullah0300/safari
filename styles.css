@@ -11,17 +11,15 @@ body {
     overflow-x: hidden;
     /* Prevent horizontal scrolling */
 }
-
 nav {
     background-color: #ffefde;
     padding: 1rem;
     width: 100%;
     position: fixed;
-    top: 40px;
+    top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: top 0.3s ease; /* Smoothly adjust position */
 }
 
 .nav-container {
@@ -32,26 +30,20 @@ nav {
     align-items: center;
 }
 
-.logo {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    line-height: 1.2;
+.logo img {
+    height: 60px;
 }
 
-.logo img{
-    height: 80px;
-}
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
 .nav-links a {
-    color: rgb(0, 0, 0);
+    color: #000;
     text-decoration: none;
+    font-size: 1rem;
     transition: opacity 0.3s;
 }
 
@@ -61,8 +53,8 @@ nav {
 
 .book-nownav {
     background-color: #F89201;
-    color: #ffffff;
-    padding: 0.3rem 1.5rem;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
     border-radius: 25px;
     border: none;
     cursor: pointer;
@@ -78,7 +70,7 @@ nav {
     display: none;
     background: none;
     border: none;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -98,8 +90,9 @@ nav {
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        gap: 2rem;
+        gap: 1.5rem;
         z-index: 1000;
+        transition: transform 0.3s ease;
     }
 
     .nav-links.active {
@@ -112,12 +105,12 @@ nav {
 
     .nav-links a {
         font-size: 1.2rem;
+        text-align: center;
     }
 
-    .book-now {
-        margin-top: 1rem;
-        padding: 0.75rem 1.5rem;
+    .book-nownav {
         font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
     }
 }
 
