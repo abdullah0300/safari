@@ -1056,11 +1056,9 @@ nav {
 
 /* Mobile Breakpoint */
 @media (max-width: 768px) {
-    .safari-destinations{
-        margin-top: 40vh;
-    }
+    
     .discover-hero {
-        margin-top: 5vh;
+        margin-top: 50vh;
         height: 70vh;
         background-attachment: scroll;
     }
