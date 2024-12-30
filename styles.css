@@ -1958,7 +1958,7 @@ nav {
     padding: 3rem;
     /* background: rgba(0, 0, 0, 0.4); */
     border-radius: 15px;
-    /* backdrop-filter: blur(8px); */
+    backdrop-filter: blur(8px);
     animation: kili-fade-up 1.2s ease-out;
 }
 
@@ -2075,12 +2075,12 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    flex: 0 0 calc(100% / 1); /* Show 2 items at a time on mobile */
+    flex: 0 0 calc(100% / 2); /* Show 2 items at a time on mobile */
 }
 
 .kili-gallery-image {
-    width: 30vh;
-    height: 30vh;
+    width: 100%;
+    height:40vh;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
