@@ -671,7 +671,7 @@ nav {
         padding: 10px;
         border: none;
         border-radius: 8px 0px 0px 8px;
-        max-width: 10rem;
+        max-width: 14rem;
         margin-left: 40vh;
 
     }
@@ -691,7 +691,8 @@ nav {
     .subscribe-form input {
         flex: 1;
 
-        max-width: 10rem;
+        max-width: 14rem;
+        border-radius: 8px 8px 8px 8px;
 
     }
 }
