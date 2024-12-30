@@ -15,43 +15,43 @@
 //     lastScrollY = window.scrollY;
 // });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const nav = document.querySelector('nav');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const hamburger = document.querySelector('.hamburger');
+//     const navLinks = document.querySelector('.nav-links');
+//     const nav = document.querySelector('nav');
 
-    function toggleMenu() {
-        navLinks.classList.toggle('active');
-        hamburger.innerHTML = navLinks.classList.contains('active') ? '&#10005;' : '&#9776;';
+//     function toggleMenu() {
+//         navLinks.classList.toggle('active');
+//         hamburger.innerHTML = navLinks.classList.contains('active') ? '&#10005;' : '&#9776;';
 
-        // Prevent body scrolling when menu is open
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    }
+//         // Prevent body scrolling when menu is open
+//         document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+//     }
 
-    hamburger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleMenu();
-    });
+//     hamburger.addEventListener('click', function (e) {
+//         e.stopPropagation();
+//         toggleMenu();
+//     });
 
-    // Close menu when clicking on a link
-    navLinks.querySelectorAll('a, button').forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
+//     // Close menu when clicking on a link
+//     navLinks.querySelectorAll('a, button').forEach(link => {
+//         link.addEventListener('click', toggleMenu);
+//     });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function (e) {
-        if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
+//     // Close menu when clicking outside
+//     document.addEventListener('click', function (e) {
+//         if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
+//             toggleMenu();
+//         }
+//     });
 
-    // Close menu when window is resized above mobile breakpoint
-    window.addEventListener('resize', function () {
-        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
-});
+//     // Close menu when window is resized above mobile breakpoint
+//     window.addEventListener('resize', function () {
+//         if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+//             toggleMenu();
+//         }
+//     });
+// });
 
 // window.onload = function() {
 //     setTimeout(function() {
