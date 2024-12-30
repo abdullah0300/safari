@@ -1320,11 +1320,18 @@ nav {
     .contact-method {
         flex-direction: column;
         align-items: flex-start;
+        max-width: 80vh;
+        font-size: 0.9rem;
     }
 
     .contact-icon {
         margin-right: 0;
         margin-bottom: 1rem;
+        
+    }
+    .social-links{
+        max-width: 80vh;
+        font-size: 0.9rem;
     }
 
     .contact-details {
@@ -1333,11 +1340,15 @@ nav {
 
     .form-input {
         font-size: 0.9rem;
+        max-width: 80vh;
     }
 
     .submit-btn {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
+    }
+    .contact-form{
+        max-width: 80vh;
     }
 }
 
