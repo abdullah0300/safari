@@ -21,7 +21,8 @@ nav {
     left: 0;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: top 0.3s ease; /* Smoothly adjust position */
+    transition: top 0.3s ease;
+    /* Smoothly adjust position */
 }
 
 .nav-container {
@@ -40,9 +41,10 @@ nav {
     line-height: 1.2;
 }
 
-.logo img{
+.logo img {
     height: 80px;
 }
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -127,7 +129,8 @@ nav {
 /* Announcement Bar Styling */
 /* Announcement Bar Styling */
 .announcement-bar {
-    background-color: #8A5A2E; /* Dark brown color */
+    background-color: #8A5A2E;
+    /* Dark brown color */
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -136,35 +139,43 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: fixed; /* Make it fixed */
-    top: 0; /* Stick to the top */
+    position: fixed;
+    /* Make it fixed */
+    top: 0;
+    /* Stick to the top */
     left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays on top */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transition: transform 0.3s ease; /* Smooth hide/show animation */
-  }
-  
-  .announcement-bar.hidden {
-    transform: translateY(-100%); /* Move out of view */
-  }
-  
-  .announcement-bar p {
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+    transition: transform 0.3s ease;
+    /* Smooth hide/show animation */
+}
+
+.announcement-bar.hidden {
+    transform: translateY(-100%);
+    /* Move out of view */
+}
+
+.announcement-bar p {
     margin: 0;
     font-size: 16px;
-  }
-  
-  .announcement-link {
+}
+
+.announcement-link {
     margin-left: 10px;
-    color: #FFD700; /* Gold color for the link */
+    color: #FFD700;
+    /* Gold color for the link */
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .announcement-link:hover {
+}
+
+.announcement-link:hover {
     text-decoration: underline;
-  }
-  
+}
+
 
 .hero {
     position: relative;
@@ -327,11 +338,12 @@ nav {
 }
 
 .popular-destinations2 {
-    
+
     padding: 0rem 2rem;
     max-width: 1300px;
     margin: 0 auto;
 }
+
 .section-title {
     font-size: 2rem;
     color: #333;
@@ -350,7 +362,7 @@ nav {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     /* width: 17   rem; */
 }
@@ -421,6 +433,7 @@ nav {
         max-width: 1200px;
 
     }
+
     .popular-destinations2 {
         padding: 2rem 1rem;
         max-width: 1200px;
@@ -435,12 +448,12 @@ nav {
     .destinations-grid {
         gap: 1rem;
     }
-    
+
 }
 
 @media (min-width: 1200px) {
     .destination-card {
-       
+
         width: 17rem;
     }
 }
@@ -481,7 +494,7 @@ nav {
     color: white;
     margin-bottom: 1.5rem;
     font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .explore-btn {
@@ -675,19 +688,22 @@ nav {
         margin-left: 40vh;
 
     }
-    .subscribe-form button{
+
+    .subscribe-form button {
         width: 20vh;
     }
 }
 
 @media (max-width: 768px) {
-    
+
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
-    .subscribe-form button{
+
+    .subscribe-form button {
         width: 15vh;
     }
+
     .subscribe-form input {
         flex: 1;
 
@@ -710,8 +726,8 @@ nav {
 
 
 
-  /* popup */
-  .popup-overlay {
+/* popup */
+.popup-overlay {
     position: fixed;
     top: 50px;
     left: 0;
@@ -818,9 +834,11 @@ nav {
     .popup-content {
         padding: 1.5rem;
     }
+
     .popup-overlay {
         top: 80px;
     }
+
     .highlights {
         grid-template-columns: 1fr;
     }
@@ -833,7 +851,7 @@ nav {
 .about-hero {
     height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://ik.imagekit.io/mctozv7td/Safari/zanzibar-2130811_1920.jpg?updatedAt=1735128946331') center/cover;
+        url('https://ik.imagekit.io/mctozv7td/Safari/zanzibar-2130811_1920.jpg?updatedAt=1735128946331') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -903,7 +921,7 @@ nav {
     .about-hero {
         height: 40vh;
     }
-    
+
     .about-hero h1 {
         font-size: 2.5rem;
     }
@@ -925,7 +943,7 @@ nav {
     margin-top: 24vh;
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('https://ik.imagekit.io/mctozv7td/Safari/51c42f446573452a945f06bc5d1b4ea8.jpg?updatedAt=1734600206848') center/cover;
+        url('https://ik.imagekit.io/mctozv7td/Safari/51c42f446573452a945f06bc5d1b4ea8.jpg?updatedAt=1734600206848') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1056,7 +1074,7 @@ nav {
 
 /* Mobile Breakpoint */
 @media (max-width: 768px) {
-    
+
     .discover-hero {
         margin-top: 15vh;
         height: 70vh;
@@ -1132,18 +1150,19 @@ nav {
     .discover-feature {
         padding: 1rem;
     }
-    .safari-destinations{
+
+    .safari-destinations {
         margin-top: 40vh;
-    }   
+    }
 }
 
 
 /* contactus
  */
- .contact-hero {
+.contact-hero {
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://ik.imagekit.io/mctozv7td/Safari/WhatsApp%20Image%202024-12-19%20at%2018.04.25_1733fe00.jpg?updatedAt=1734937320535') center/cover;
+        url('https://ik.imagekit.io/mctozv7td/Safari/WhatsApp%20Image%202024-12-19%20at%2018.04.25_1733fe00.jpg?updatedAt=1734937320535') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1322,6 +1341,7 @@ nav {
     .social-grid {
         gap: 5px;
     }
+
     .contact-container {
         margin-top: -50px;
     }
@@ -1348,9 +1368,10 @@ nav {
     .contact-icon {
         margin-right: 0;
         margin-bottom: 1rem;
-        
+
     }
-    .social-links{
+
+    .social-links {
         max-width: 30vh;
         font-size: 0.9rem;
     }
@@ -1368,190 +1389,202 @@ nav {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-    .contact-form{
+
+    .contact-form {
         max-width: 30vh;
     }
 }
 
 /* saengeti */
-       
 
-        .paw-print {
-            position: fixed;
-            width: 30px;
-            height: 30px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0522d30'%3E%3Cpath d='M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm6 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-12 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm6 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z'/%3E%3C/svg%3E");
-            opacity: 0.1;
-            pointer-events: none;
-        }
 
-        .serengeti-hero {
-            margin-top: 20vh;
-            height: 60vh;
-            background: 
-                        url('https://ik.imagekit.io/mctozv7td/Safari/magdalena-kula-manchee-EgbLppsj3L4-unsplash%20(1).jpg?updatedAt=1734953743187') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
+.paw-print {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0522d30'%3E%3Cpath d='M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm6 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-12 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm6 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z'/%3E%3C/svg%3E");
+    opacity: 0.1;
+    pointer-events: none;
+}
 
-        .hero-content {
-            max-width: 800px;
-            padding: 2rem;
-            /* background: rgba(0, 0, 0, 0.4); */
-            border-radius: 10px;
-            /* backdrop-filter: blur(5px); */
-            animation: fadeIn 1s ease-out;
-        }
+.serengeti-hero {
+    margin-top: 20vh;
+    height: 60vh;
+    background:
+        url('https://ik.imagekit.io/mctozv7td/Safari/magdalena-kula-manchee-EgbLppsj3L4-unsplash%20(1).jpg?updatedAt=1734953743187') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
 
-        .hero-heading {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    /* background: rgba(0, 0, 0, 0.4); */
+    border-radius: 10px;
+    /* backdrop-filter: blur(5px); */
+    animation: fadeIn 1s ease-out;
+}
 
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
+.hero-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
-            margin: 4rem 0;
-        }
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
 
-        .info-box {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 4rem 0;
+}
 
-        .info-box:hover {
-            transform: translateY(-10px);
-        }
+.info-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
-        .info-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: #e6b800;
-        }
+.info-box:hover {
+    transform: translateY(-10px);
+}
 
-        .highlight-section {
-            position: relative;
-            padding: 6rem 0;
-            background: #2c1810;
-            color: white;
-            margin: 4rem 0;
-        }
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #e6b800;
+}
 
-        .media-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin: 4rem 0;
-        }
+.highlight-section {
+    position: relative;
+    padding: 6rem 0;
+    background: #2c1810;
+    color: white;
+    margin: 4rem 0;
+}
 
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            aspect-ratio: 16/9;
-        }
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
 
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    aspect-ratio: 16/9;
+}
 
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
 
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin: 4rem 0;
-        }
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
 
-        .stat-box {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(230, 184, 0, 0.1);
-            border-radius: 15px;
-            border-bottom: 4px solid #e6b800;
-        }
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
 
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #e6b800;
-            margin-bottom: 1rem;
-        }
+.stat-box {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(230, 184, 0, 0.1);
+    border-radius: 15px;
+    border-bottom: 4px solid #e6b800;
+}
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            margin: 4rem 0;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e6b800;
+    margin-bottom: 1rem;
+}
 
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin: 4rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        @media (max-width: 1024px) {
-            .info-grid, .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 
-            .media-gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        @media (max-width: 768px) {
-            .hero-heading {
-                font-size: 3rem;
-            }
+@media (max-width: 1024px) {
 
-            .info-grid, .media-gallery, .stats-container {
-                grid-template-columns: 1fr;
-            }
+    .info-grid,
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-            .container {
-                padding: 2rem 1rem;
-            }
-        }
+    .media-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .info-grid,
+    .media-gallery,
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 2rem 1rem;
+    }
+}
 
 /* New dropdown styles */
 .dropdown {
@@ -1582,7 +1615,7 @@ nav {
     left: 0;
     background-color: white;
     min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     opacity: 0;
     visibility: hidden;
@@ -1610,7 +1643,7 @@ nav {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-   
+
 
     .dropdown {
         width: 100%;
@@ -1630,7 +1663,7 @@ nav {
         display: block;
     }
 
-    
+
 }
 
 
@@ -1657,8 +1690,8 @@ nav {
 
 .crater-hero-section {
     height: 60vh;
-    background: 
-                url('https://ik.imagekit.io/mctozv7td/Safari/Ngorongoro%20Crater.jpg?updatedAt=1735117772534') center/cover;
+    background:
+        url('https://ik.imagekit.io/mctozv7td/Safari/Ngorongoro%20Crater.jpg?updatedAt=1735117772534') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1796,18 +1829,29 @@ nav {
 }
 
 @keyframes crater-fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 @media (max-width: 1024px) {
     .crater-info-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .crater-gallery {
-        grid-template-columns: 1fr; /* Set to 1 column */
-        grid-template-rows: auto; /* Allow rows to adjust automatically */
-        gap: 1rem; /* Optional: Add spacing between rows */
+        grid-template-columns: 1fr;
+        /* Set to 1 column */
+        grid-template-rows: auto;
+        /* Allow rows to adjust automatically */
+        gap: 1rem;
+        /* Optional: Add spacing between rows */
     }
 
     .crater-stats-container {
@@ -1820,15 +1864,18 @@ nav {
         font-size: 3rem;
     }
 
-    .crater-info-grid, 
+    .crater-info-grid,
     .crater-stats-container {
         grid-template-columns: 1fr;
     }
 
     .crater-gallery {
-        grid-template-columns: 1fr; /* Ensure one column layout */
-        grid-template-rows: auto; /* Adjust rows automatically */
-        gap: 1rem; /* Optional: Add spacing between rows */
+        grid-template-columns: 1fr;
+        /* Ensure one column layout */
+        grid-template-rows: auto;
+        /* Adjust rows automatically */
+        gap: 1rem;
+        /* Optional: Add spacing between rows */
     }
 
     .crater-container {
@@ -1944,7 +1991,7 @@ nav {
     margin-top: 20vh;
     height: 70vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('https://ik.imagekit.io/mctozv7td/Safari/mount-kilimanjaro-7312237_1920.jpg?updatedAt=1735120648707') center/cover fixed;
+        url('https://ik.imagekit.io/mctozv7td/Safari/mount-kilimanjaro-7312237_1920.jpg?updatedAt=1735120648707') center/cover fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1958,7 +2005,7 @@ nav {
     padding: 3rem;
     /* background: rgba(0, 0, 0, 0.4); */
     border-radius: 15px;
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     animation: kili-fade-up 1.2s ease-out;
 }
 
@@ -2058,6 +2105,7 @@ nav {
     color: #2d3436;
     margin-bottom: 1rem;
 }
+
 .kili-gallery {
     overflow-x: auto;
     white-space: nowrap;
@@ -2067,7 +2115,8 @@ nav {
 
 .kili-gallery-wrapper {
     display: inline-flex;
-    gap: 1rem; /* Adjust gap for spacing */
+    gap: 1rem;
+    /* Adjust gap for spacing */
 }
 
 .kili-gallery-item {
@@ -2075,9 +2124,12 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    flex: 0 0 90%; /* Each image takes 80% of the viewport width */
-    max-width: 90%; /* Prevent stretching */
-    height: 300px; /* Maintain consistent height */
+    flex: 0 0 90%;
+    /* Each image takes 80% of the viewport width */
+    max-width: 90%;
+    /* Prevent stretching */
+    height: 300px;
+    /* Maintain consistent height */
 }
 
 .kili-gallery-image {
@@ -2101,11 +2153,13 @@ nav {
 
     .kili-gallery-item {
         flex: none;
-        height: auto; /* Allow grid to control height */
-        flex: 0 0 100%; /* Each image takes 80% of the viewport width */
-    max-width: 100%
+        height: auto;
+        /* Allow grid to control height */
+        flex: 0 0 100%;
+        /* Each image takes 80% of the viewport width */
+        max-width: 100%
     }
-    
+
 
     .kili-gallery-item:nth-child(1) {
         grid-column: span 2;
@@ -2120,6 +2174,7 @@ nav {
     margin: 6rem 0;
     align-items: center;
 }
+
 .kili-info-section img {
     height: 30rem;
     border-radius: 20px;
@@ -2143,8 +2198,15 @@ nav {
 
 
 @keyframes kili-fade-up {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2153,11 +2215,12 @@ nav {
     }
 
     .kili-stats-container {
-        grid-template-columns: 1fr; /* Ensure one column layout */
+        grid-template-columns: 1fr;
+        /* Ensure one column layout */
         grid-template-rows: auto;
     }
 
-    
+
 
     .kili-info-section {
         grid-template-columns: 1fr;
@@ -2167,27 +2230,36 @@ nav {
 
 @media (max-width: 768px) {
     .kili-info-section {
-        grid-template-columns: 1fr; /* Single column layout */
-        gap: 2rem; /* Reduce gap for smaller screens */
-        margin: 4rem 1rem; /* Adjust margins for better spacing */
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        gap: 2rem;
+        /* Reduce gap for smaller screens */
+        margin: 4rem 1rem;
+        /* Adjust margins for better spacing */
     }
 
     .kili-info-section img {
-        height: 50vh; /* Allow image height to adjust naturally */
-        width: 100%; /* Ensure image takes full width */
+        height: 50vh;
+        /* Allow image height to adjust naturally */
+        width: 100%;
+        /* Ensure image takes full width */
     }
 
     .kili-info-content {
-        padding: 1.5rem; /* Reduce padding for smaller screens */
+        padding: 1.5rem;
+        /* Reduce padding for smaller screens */
     }
 
     .kili-info-title {
-        font-size: 2rem; /* Adjust font size for titles */
+        font-size: 2rem;
+        /* Adjust font size for titles */
     }
 
     .kili-info-text {
-        font-size: 1rem; /* Adjust font size for text */
+        font-size: 1rem;
+        /* Adjust font size for text */
     }
+
     .kili-hero-heading {
         font-size: 3.5rem;
     }
@@ -2196,15 +2268,15 @@ nav {
         grid-template-columns: 1fr;
     }
 
-    
+
 }
 
 
 /* zanziber
  */
 
- 
- .zanzibar-body {
+
+.zanzibar-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #3d649e;
@@ -2226,8 +2298,8 @@ nav {
 
 .zanzibar-hero-section {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('https://ik.imagekit.io/mctozv7td/Safari/africa-5135407_1920.jpg?updatedAt=1735127480374') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('https://ik.imagekit.io/mctozv7td/Safari/africa-5135407_1920.jpg?updatedAt=1735127480374') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2355,8 +2427,15 @@ nav {
 }
 
 @keyframes zanzibar-fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2365,8 +2444,10 @@ nav {
     }
 
     .zanzibar-gallery {
-        grid-template-columns: 1fr; /* Ensure one column layout */
-        grid-template-rows: auto; /* Adjust rows automatically */
+        grid-template-columns: 1fr;
+        /* Ensure one column layout */
+        grid-template-rows: auto;
+        /* Adjust rows automatically */
     }
 
     .zanzibar-split-section {
@@ -2587,12 +2668,12 @@ nav {
         height: 200px;
     }
 }
-  
+
 
 /* whatsapp
  */
 
- .whatsapp-btn {
+.whatsapp-btn {
     position: fixed;
     bottom: 24px;
     right: 24px;
@@ -2630,7 +2711,7 @@ nav {
         padding: 10px 20px;
         font-size: 14px;
     }
-    
+
     .whatsapp-icon {
         width: 20px;
         height: 20px;
@@ -2646,7 +2727,7 @@ nav {
     margin-bottom: 40px;
     background-color: #FFF8E1;
     padding: 30px 10px;
-    
+
 }
 
 .highlights-container {
@@ -2695,14 +2776,17 @@ nav {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
         gap: 20px;
         padding: 10px 0;
     }
 
     .highlights-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none;
+        /* Chrome, Safari, Opera */
     }
 
     .highlight-item {
@@ -2745,8 +2829,8 @@ nav {
 
 .accomo-hero {
     margin-top: 24vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('https://ik.imagekit.io/mctozv7td/Safari/WhatsApp%20Image%202024-12-26%20at%2013.47.53_31973389.jpg?updatedAt=1735203230246');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://ik.imagekit.io/mctozv7td/Safari/WhatsApp%20Image%202024-12-26%20at%2013.47.53_31973389.jpg?updatedAt=1735203230246');
     background-size: cover;
     background-position: center;
     color: white;
@@ -2769,7 +2853,7 @@ nav {
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .accomo-card img {
@@ -2793,7 +2877,9 @@ nav {
     margin-bottom: 10px;
 }
 
-.accomo h1, h2, h3 {
+.accomo h1,
+h2,
+h3 {
     color: #333;
 }
 
@@ -2819,8 +2905,8 @@ nav {
     }
 }
 
-   /* Gallery Styles */
-   .accomo-gallery-section {
+/* Gallery Styles */
+.accomo-gallery-section {
     padding: 60px 0;
     background: #f8f8f8;
 }
@@ -2861,7 +2947,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -2878,7 +2964,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 1000;
     padding: 40px;
 }
@@ -2973,7 +3059,7 @@ nav {
 .safari-hero {
     margin-top: 20vh;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3018,7 +3104,7 @@ nav {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -3113,7 +3199,7 @@ nav {
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -3143,11 +3229,11 @@ nav {
     .safari-hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .safari-hero p {
         font-size: 1.2rem;
     }
-    
+
     .safari-grid {
         grid-template-columns: 1fr;
     }
@@ -3155,7 +3241,7 @@ nav {
     .safari-history-content {
         grid-template-columns: 1fr;
     }
-    
+
     .safari-history-image {
         height: 300px;
     }
@@ -3346,16 +3432,16 @@ nav {
     .why-safari-title {
         font-size: 2rem;
     }
-    
+
     .why-safari-subtitle {
         font-size: 1rem;
     }
-    
+
     .why-safari-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .why-safari-item {
         padding: 1.5rem;
     }
@@ -3447,7 +3533,7 @@ nav {
 .dream-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
 }
 
 .dream-hero-cta {
@@ -3645,11 +3731,11 @@ nav {
     .blog-title {
         font-size: 2rem;
     }
-    
+
     .blog-subtitle {
         font-size: 1.5rem;
     }
-    
+
     .blog-image {
         height: 300px;
     }
