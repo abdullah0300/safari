@@ -58,3 +58,11 @@ if (window.innerWidth <= 768) {
         });
     });
 }
+
+
+document.querySelector('.kili-gallery').addEventListener('wheel', (event) => {
+    if (event.deltaY !== 0) {
+        event.preventDefault();
+        event.currentTarget.scrollLeft += event.deltaY;
+    }
+});
