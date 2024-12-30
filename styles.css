@@ -2075,7 +2075,7 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    flex: 0 0 calc(100% / 2); /* Show 2 items at a time on mobile */
+    flex: 0 0 calc(100% / 1); /* Show 2 items at a time on mobile */
 }
 
 .kili-gallery-image {
