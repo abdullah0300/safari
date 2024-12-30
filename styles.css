@@ -2366,7 +2366,7 @@ nav {
     }
 
     .zanzibar-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         grid-template-rows: auto;
     }
 
