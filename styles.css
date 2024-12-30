@@ -2347,7 +2347,8 @@ nav {
     }
 
     .zanzibar-gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Ensure one column layout */
+        grid-template-rows: auto; /* Adjust rows automatically */
     }
 
     .zanzibar-split-section {
@@ -2366,7 +2367,7 @@ nav {
 
     .zanzibar-gallery {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 200px);
+        grid-template-rows: auto;
     }
 
     .zanzibar-container {
