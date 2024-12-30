@@ -1301,6 +1301,9 @@ nav {
 }
 
 @media (max-width: 720px) {
+    .social-grid {
+        gap: 5px;
+    }
     .contact-container {
         margin-top: -50px;
     }
