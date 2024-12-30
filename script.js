@@ -68,23 +68,15 @@ document.querySelector('.kili-gallery').addEventListener('wheel', (event) => {
 });
 
 
-// Add this JavaScript for mobile menu functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const dropdowns = document.querySelectorAll('.dropdown-trigger');
 
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
 
-    // Handle mobile dropdown toggles
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent navigation
+            const parentDropdown = trigger.closest('.dropdown');
+            parentDropdown.classList.toggle('active'); // Toggle the active class
         });
     });
 });
