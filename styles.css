@@ -178,6 +178,7 @@ nav {
 
 
 .hero {
+    margin-bottom: 34vh;
     position: relative;
     height: 85vh;
     background: url('https://ik.imagekit.io/mctozv7td/Safari/lion-7445821.jpg?updatedAt=1734600208540') no-repeat center center/cover;
@@ -526,9 +527,7 @@ nav {
     .banner-title {
         font-size: 2rem;
     }
-    .aboutus-section{
-        margin-top: 80vh;
-    }
+    
 }
 
 @media (max-width: 480px) {
