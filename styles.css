@@ -526,6 +526,9 @@ nav {
     .banner-title {
         font-size: 2rem;
     }
+    .aboutus-section{
+        margin-top: 80vh;
+    }
 }
 
 @media (max-width: 480px) {
